@@ -7,6 +7,9 @@ class Department(db.Model):
     department_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     department_name = db.Column(db.String(50))
 
+    def __init__(self):
+        pass
+
 
 class Employee(db.Model):
     employees_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
